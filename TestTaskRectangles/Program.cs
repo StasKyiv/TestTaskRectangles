@@ -11,21 +11,33 @@ namespace TestRectangle
             SortClass sort = new SortClass();
 
             Point[] arrayPoint = new Point[]
-            {new Point{ X = 200, Y = 300},
-             new Point{ X = 400, Y = 100},
-             new Point{ X = 700, Y = 400},
-             new Point{ X = 500, Y = 600},
-             new Point{ X = 53, Y = 40},
-             new Point{ X = 10, Y = 10},
-             new Point{ X = 10, Y = 20},
-             new Point{ X = 20, Y = 10},
-             new Point{ X = 20, Y = 20},
-             new Point{ X = 54, Y = 40}
+            {new Point{ X = 60, Y = 40},
+                new Point{ X = 10, Y = 30},
+                new Point{ X = 40, Y = 30},
+                new Point{ X = 50, Y = 5},
+                new Point{ X = 50, Y = 60},
+                new Point{ X = 40, Y = 60},
+                new Point{ X = 20, Y = 50},
+                new Point{ X = 50, Y = 45},
+                new Point{ X = 40, Y = 45},
+                new Point{ X = 10, Y = 40},
+                new Point{ X = 55, Y = 35},
+                new Point{ X = 35, Y = 35},
+                new Point{ X = 65, Y = 25},
+                new Point{ X = 25, Y = 25},
+                new Point{ X = 40, Y = 20},
+                new Point{ X = 30, Y = 20},
+                new Point{ X = 10, Y = 20},
+                new Point{ X = 50, Y = 10},
+                new Point{ X = 30, Y = 10},
+                new Point{ X = 10, Y = 10}
             };
 
             var arraySort = await Task.Run(() => sort.SortArray(arrayPoint));
 
-            await Task.Run(() => FindRectangle(arraySort));
+            //await Task.Run(() => FindRectangle(arraySort));
+
+            FindRectangle(arraySort);
 
             Console.ReadLine();
         }

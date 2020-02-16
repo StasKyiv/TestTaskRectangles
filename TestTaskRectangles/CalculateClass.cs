@@ -54,6 +54,14 @@ namespace TestRectangle
                 diagX = four.X - one.X;
                 diagY = two.Y - three.Y;
             }
+            else if (four.Y == two.Y && three.Y == one.Y)
+            {
+                diffOneY = four.Y - two.Y;
+                diffTwoY = three.Y - one.Y;
+
+                diagX = four.X - one.X;
+                diagY = three.X - two.X;
+            }
 
             if (diffOneY == diffTwoY && diffOneY >= 0 && diffTwoY >= 0)
             {
