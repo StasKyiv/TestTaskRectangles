@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System;
 
 namespace TestRectangle
 {
@@ -82,5 +83,38 @@ namespace TestRectangle
                 return false;
             }
         }
+
+        //public bool IsRectangle(Rectangle points)
+        //{
+        //    Point[] recPoint = new Point[4];
+        //    recPoint[0] = points.One;
+        //    recPoint[1] = points.Two;
+        //    recPoint[2] = points.Three;
+        //    recPoint[3] = points.Four;
+
+        //    var sortPoints = recPoint.OrderBy(u => u.X).ToArray();
+
+        //    Point a = sortPoints[0];
+        //    Point b = sortPoints[1];
+        //    Point c = sortPoints[2];
+        //    Point d = sortPoints[3];
+
+        //    double AB = LineLength(a, b);
+        //    double AC = LineLength(a, c);
+        //    double BC = LineLength(b, c);
+        //    double CD = LineLength(c, d);
+        //    double BD = LineLength(b, d);
+        //    double AD = LineLength(a, d);
+
+        //    bool result1 = (AB + AC == BC) ? true : false;
+        //    bool result2 = (CD + BD == AD) ? true : false;
+
+        //    return result1 & result2;
+        //}
+
+        //private static double LineLength(Point one, Point two)
+        //{
+        //    return Math.Pow(two.Y - one.Y, 2) + Math.Pow(two.X - one.X, 2);
+        //}
     }
 }
